@@ -1,0 +1,57 @@
+== Welcome to CouchDB Model Skeleton
+
+These files comprise a starting point for using CouchDB with Rails 3 and 
+couchrest_model.
+
+== Why?
+
+The couchrest_model gem does not yet include Rails 3 initializers. It took 
+some poking around and reading source to figure out configuration options--I 
+hope this with save others time.
+
+The initializer and yaml config are from couchrest-rails by Henry Poydar.
+
+== Getting Started
+
+1. Install current versions of CouchDB (1.0.1 or later), Bundler, Rails 3 and 
+RSpec 2.
+
+2. Install the couchrest_model gem (version 1.0.0.beta8 or newer):
+       <tt>gem install couchrest_model --pre</tt>
+
+3. Run Bundler to ensure all dependencies are met:
+       <tt>bundle install</tt>
+
+4. If step 3 failed, you must ensure your couchrest_model install can coexist 
+with rails 3.0 gems. You may install the latest copy from the Github repo. 
+Alternately, you can adjust the gemspec dependencies (please note that 
+changing gem dependencies is NOT considered best practice):
+       <tt>s.add_dependency(%q<activesupport>, ["~> 3.0.3"])</tt>
+       <tt>s.add_dependency(%q<activemodel>, ["~> 3.0.3"])</tt>
+You will find the gemspec file under your ruby directory:
+       
+<tt>lib/ruby/gems/1.9/specifications/couchrest_model-1.0.0.beta8.gemspec</tt>
+
+5. Run specs with one of the following commands:
+       <tt>bundle exec rspec spec</tt> OR
+       <tt>rake</tt>
+
+6. Batch replace the text 'CouchDBModelSkeleton' with your app's name.
+
+7. Read up on CouchDB:
+* The couchrest_model repository on Github: 
+https://github.com/couchrest/couchrest_model
+* The couchrest_rails repository on Github: 
+https://github.com/hpoydar/couchrest-rails/
+* The Apache CouchDB website: http://www.couchdb.org/
+
+== Support
+
+This setup has been tested with Rails 3, Ruby 1.9.2p0, rspec-rails 3.2.1, and 
+CouchDB 1.0.1.
+
+== License
+
+Copyright (c) 2010 William T Nelson (except where noted)
+
+Released under the Simplified BSD license
